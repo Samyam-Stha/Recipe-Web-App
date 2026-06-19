@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LoginPage from '../../Components/Login/loginPage.svelte';
+	import LoginPage from '../../Components/Login/LoginPage.svelte';
 	import { goto } from '$app/navigation';
 </script>
 
