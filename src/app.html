@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<script src="https://mini-app-sdk.hamrostack.com/main-dev.js"></script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+
+		<!-- <script>
+			if ('serviceWorker' in navigator) {
+				addEventListener('load', () => navigator.serviceWorker.register('/sw.js', { scope: '/' }));
+			}
+		</script> -->
+	</body>
+</html>
