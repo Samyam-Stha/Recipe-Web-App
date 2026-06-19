@@ -20,7 +20,7 @@
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import { goto } from '$app/navigation';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
-	import { handleLogout, initMiniApp } from '../../utils/miniappInitializer.ts';
+
 	import SkeletonCard from '../Skeletons/SkeletonCard.svelte';
 	import axios from 'axios';
 	// import { loggedIn } from '../../Store/auth.store.ts';
@@ -44,11 +44,7 @@
 		categories.set(categoryData.categories);
 		loading = false;
 
-		initMiniApp();
 
-		// const profile =
-		// 	JSON.parse(localStorage.getItem('mini-app-profile') ?? '{}')?.user_profile ?? false;
-		// loggedIn.set(!!profile);
 	});
 
 	let loggedIn = false;
@@ -79,11 +75,11 @@
 	// };
 
 	function handleLogoutWrapper() {
-		handleLogout().then(() => {
-			loggedIn = false;
-			goto('/');
-			window.location.reload();
-		});
+		localStorage.removeItem('auth');
+		localStorage.removeItem('mini-app-profile');
+		loggedIn = false;
+		goto('/');
+		window.location.reload();
 	}
 
 	$: {

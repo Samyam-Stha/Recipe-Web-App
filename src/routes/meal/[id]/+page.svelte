@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 	import { fetchMealById, type Meal } from '../../../Store/Recipe.ts';
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
-	import { fly } from 'svelte/transition';
 	import { slide, fade } from 'svelte/transition';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import SkeletonRecipe from '../../../Components/Skeletons/SkeletonRecipe.svelte';

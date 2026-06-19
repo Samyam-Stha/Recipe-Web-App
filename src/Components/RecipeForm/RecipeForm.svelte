@@ -6,7 +6,6 @@
 	import { openDB, savedRecipes, saveUserRecipe } from '../../Store/MyRecipe.ts';
 
 	import '../../app.css';
-	import postcss from 'postcss';
 	import { Trash2 } from '@lucide/svelte';
 	import { Camera } from '@lucide/svelte';
 	import axios from 'axios';

@@ -17,7 +17,7 @@
 		All
 	</Badge>
 
-	{#each $area as a}
+	{#each ($area ?? []) as a}
 		<Badge
 			variant={$selectedArea === a.strArea ? 'default' : 'outline'}
 			class={`w-20 h-10 ${

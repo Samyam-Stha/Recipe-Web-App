@@ -88,7 +88,7 @@
 <!-- 
 <button
 	class="container rounded-xl flex p-3 shadow-[0_0_15px_5px_rgba(0,0,0,0.4)]"
-	on:click={openDetails}
+	onclick={openDetails}
 >
 	<div class="box p-2">
 		<div class="imgcontainer">

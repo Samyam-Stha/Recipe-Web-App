@@ -6,7 +6,6 @@
 	import SkeletonRecipe from '../../../Components/Skeletons/SkeletonRecipe.svelte';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import { fetchMealById, type Meal } from '../../../Store/Recipe.ts';
-	import { fly } from 'svelte/transition';
 	import { slide, fade } from 'svelte/transition';
 	import { ChevronLeft } from '@lucide/svelte';
 

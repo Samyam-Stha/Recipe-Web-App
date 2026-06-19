@@ -47,7 +47,7 @@
 			type="search"
 			placeholder="Search..."
 			bind:value={searched}
-			on:input={handleSearch}
+			oninput={handleSearch}
 			class="border rounded-xl p-2 w-full"
 		/>
 		<button class="bg-emerald-600 w-10 flex justify-center items-center rounded-xl p-2">

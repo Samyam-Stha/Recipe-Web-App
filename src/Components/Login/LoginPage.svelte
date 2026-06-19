@@ -20,7 +20,7 @@
 			<h1 class="text-2xl">Welcome Back</h1>
 		</div>
 
-		<form class="space-y-6" on:submit={handleSignIn}>
+		<form class="space-y-6" onsubmit={handleSignIn}>
 			<div class="space-y-2">
 				<label for="email" class="text-sm font-medium text-gray-800">Email</label>
 				<input
